@@ -248,7 +248,10 @@ footer > div:nth-child(2) > div > div > i {
   main > div:nth-child(1) > button {
     font-family: "Poppins";
     width: 40%;
-    margin: 15px 0 5px 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
     border-radius: 4px;
     border-color: var(--nav-grey);
     background-color: white;
@@ -272,7 +275,7 @@ footer > div:nth-child(2) > div > div > i {
     margin-top: 40px;
   }
 
-  main > div > p {
+  main > div:nth-child(2) > p {
     text-align: left;
     display: inline;
   }
@@ -338,7 +341,130 @@ footer > div:nth-child(2) > div > div > i {
 }
 
 @media (min-width: 961px) and (max-width: 1024px) {
+  header > h1 {
+    font-size: 4rem;
+  }
+
+  header > input {
+    display: inline;
+    width: 40%;
+  }
+
+  header > button {
+    width: 20%;
+  }
+
+  .sign-in {
+    text-align: start;
+  }
+
+  header > img {
+    max-width: 75%;
+    display: flex;
+  }
+
+  main > div > h2 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+  main > div:nth-child(1) > button {
+    font-family: "Poppins";
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 4px;
+    border-color: var(--nav-grey);
+    background-color: white;
+    font-weight: 700;
+    padding: 15px;
+    color: var(--button-purple);
+  }
+
+  main > div > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main > div:nth-child(2) {
+    padding: 20px;
+  }
+
+  main > div > h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  main > div:nth-child(2) > p {
+    text-align: left;
+    display: inline;
+  }
+
+  main > div:nth-child(2) > input {
+    display: inline;
+    width: 25%;
+    border-radius: 4px;
+    border-color: var(--paragraph-grey);
+    padding: 15px;
+    outline: none;
+    margin-left: 15vw;
+  }
+
+  main > div:nth-child(2) > button {
+    font-family: "Poppins";
+    width: 25%;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--button-purple);
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+  }
+
+  footer > div:nth-child(1) {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  br {
+    display: none;
+  }
+
+  footer > div:nth-child(2) {
+    background-color: var(--background-grey);
+    padding: 40px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer > div:nth-child(2) > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer > div:nth-child(2) > div > div {
+    margin: 0;
+  }
+
+  footer > div:nth-child(2) > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    font-weight: 700;
+    color: var(--paragraph-grey);
+    margin: 0;
+  }
 }
 
 @media (min-width: 1025px) {
+  * {
+    background-color: red;
+  }
 }
