@@ -1,3 +1,5 @@
+/* Tentei fazer o minimo de alterações possiveis no HTML e utilizar, apesar de saber que não é uma boa pratica tambem tentei utilizar o menos numero de classes possiveis. */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 :root {
@@ -449,7 +451,7 @@ footer > div:nth-child(2) > div > div > i {
   }
 
   footer > div:nth-child(2) > div > div {
-    margin: 0;
+    margin: 0 0 0 20px;
   }
 
   footer > div:nth-child(2) > ul {
@@ -464,7 +466,159 @@ footer > div:nth-child(2) > div > div > i {
 }
 
 @media (min-width: 1025px) {
-  * {
-    background-color: red;
+  nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    color: var(--nav-grey);
+  }
+
+  nav > ul > li {
+    margin: 0 20px;
+  }
+
+  nav > ul > li:last-child {
+    padding: 6px 12px;
+    border: 1px solid var(--nav-grey);
+    border-radius: 4px;
+  }
+
+  .hamburg {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header > h1 {
+    font-size: 5rem;
+  }
+
+  header > p {
+    grid-column-start: 2;
+  }
+
+  header > input {
+    display: none;
+  }
+
+  header > button {
+    width: 40%;
+    grid-column-start: 2;
+  }
+
+  .sign-in {
+    text-align: start;
+  }
+
+  header > img {
+    width: 100%;
+    grid-row: 1;
+  }
+
+  main > div > h2 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+  main > div > p {
+    color: var(--paragraph-grey);
+  }
+
+  main > div:nth-child(1) > button {
+    font-family: "Poppins";
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 4px;
+    border-color: var(--nav-grey);
+    background-color: white;
+    font-weight: 700;
+    padding: 15px;
+    color: var(--button-purple);
+  }
+
+  main > div > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main > div:nth-child(2) {
+    padding: 20px;
+  }
+
+  main > div > h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  main > div:nth-child(2) > p {
+    text-align: left;
+    display: inline;
+  }
+
+  main > div:nth-child(2) > input {
+    display: inline;
+    width: 25%;
+    border-radius: 4px;
+    border-color: var(--paragraph-grey);
+    padding: 15px;
+    outline: none;
+    margin-left: 15vw;
+  }
+
+  main > div:nth-child(2) > button {
+    font-family: "Poppins";
+    width: 25%;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--button-purple);
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+  }
+
+  footer > div:nth-child(1) {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  br {
+    display: none;
+  }
+
+  footer > div:nth-child(2) {
+    background-color: var(--background-grey);
+    padding: 40px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer > div:nth-child(2) > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer > div:nth-child(2) > div > div {
+    margin: 0 0 0 20px;
+  }
+
+  footer > div:nth-child(2) > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    font-weight: 700;
+    color: var(--paragraph-grey);
+    margin: 0;
   }
 }
